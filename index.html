@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>CloudCart | Cloud E-Commerce Platform</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a class="brand" href="#"><span>☁</span> CloudCart</a>
+    <div class="links">
+      <a href="#home">Home</a><a href="#products">Products</a><a href="#features">Cloud Features</a>
+      <button id="cartBtn">🛒 Cart <b id="cartCount">0</b></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div>
+    <p class="eyebrow">CLOUD-BASED E-COMMERCE</p>
+    <h1>Shop smarter.<br><span>Scale faster.</span></h1>
+    <p class="heroText">A modern cloud-ready e-commerce platform designed for secure, scalable online shopping.</p>
+    <a class="primary" href="#products">Explore Products</a>
+  </div>
+  <div class="heroCard"><div class="cloud">☁️</div><h3>Cloud Infrastructure</h3><p>Scalable • Secure • Highly Available</p><div class="status">● Systems operational</div></div>
+</section>
+
+<section id="features" class="section">
+  <div class="sectionHead"><p class="eyebrow">BUILT FOR THE CLOUD</p><h2>Powerful platform features</h2></div>
+  <div class="features">
+    <article><div>⚡</div><h3>Scalable</h3><p>Designed to handle growing traffic and product demand.</p></article>
+    <article><div>🔐</div><h3>Secure</h3><p>Security-focused architecture and safe checkout simulation.</p></article>
+    <article><div>📊</div><h3>Observable</h3><p>Cloud-ready monitoring and operational visibility.</p></article>
+  </div>
+</section>
+
+<section id="products" class="section productsSection">
+  <div class="sectionHead"><p class="eyebrow">SHOP</p><h2>Featured products</h2></div>
+  <div class="toolbar"><input id="search" placeholder="Search products..."/><select id="category"><option value="all">All categories</option><option>Electronics</option><option>Accessories</option><option>Home</option></select></div>
+  <div id="productsGrid" class="grid"></div>
+</section>
+</main>
+
+<div id="cartModal" class="modal hidden"><div class="modalBox"><button class="close" id="closeCart">×</button><h2>Your Cart</h2><div id="cartItems"></div><div class="total">Total: ₹<span id="cartTotal">0</span></div><button class="primary full" id="checkout">Checkout</button></div></div>
+<footer><p>© 2026 CloudCart — Cloud-Based E-Commerce Platform</p><p>Academic project • Demo checkout only</p></footer>
+<script src="app.js"></script>
+</body>
+</html>
